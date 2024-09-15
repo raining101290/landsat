@@ -2121,8 +2121,11 @@ p {
 }
 
 @media (max-width: 767px) {
-  iframe {
+  /* iframe {
     width: auto !important;
+  } */
+  .card .card-body.no-padd{
+    padding: 1.5rem !important;
   }
 }
 /*********************************/
@@ -6787,8 +6790,8 @@ body[data-layout-mode=dark] .mode-light {
 #topbar.nav-sticky .logo{
   display: block;
 } */
-.card .card-body.no-padd{
-  padding: 0px 1.5rem !important;
+.card .card-body{
+  padding: 1.2rem;
 }
 @media (max-width: 991px) {
   .topbar-container .topbar-btn .btn{
