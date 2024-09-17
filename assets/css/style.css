@@ -5909,11 +5909,12 @@ html[dir=rtl] .tns-visually-hidden {
 
 .section-title .title {
   letter-spacing: 0.5px;
-  font-size: 35px !important;
+  font-size: 50px !important;
+  font-weight: 300;
 }
 @media (max-width: 768px) {
   .section-title .title {
-    font-size: 28px !important;
+    font-size: 40px !important;
   }
 }
 .section-title .sub-title{
@@ -6780,21 +6781,32 @@ body[data-layout-mode=dark] .mode-light {
 .home-slider{
   margin-top: 175px;
 }
-/* #topbar.nav-sticky .number p:first-child{
-  display: none;
-} */
-
-/* #topnav.nav-sticky .logo{
-  display: none;
-}
-#topbar.nav-sticky .logo{
-  display: block;
-} */
 .card .card-body{
   padding: 1.2rem;
 }
+.gallery .work-container.work-modern .overlay-work {
+  opacity: 1;
+}
+.gallery .overlay-work{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+  padding:20px;
+  text-align: center;
+}
+
 @media (max-width: 991px) {
   .topbar-container .topbar-btn .btn{
     white-space: nowrap;
+  }
+}
+
+/* Custom container width override */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
   }
 }
