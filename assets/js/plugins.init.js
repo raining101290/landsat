@@ -74,15 +74,17 @@ if(document.getElementsByClassName('tiny-two-item').length > 0) {
 if(document.getElementsByClassName('tiny-three-item').length > 0) {
     var slider = tns({
         container: '.tiny-three-item',
-        controls: false,
+        controls: true,
         mouseDrag: true,
         loop: true,
         rewind: true,
-        autoplay: true,
+        autoplay: false,
         autoplayButtonOutput: false,
         autoplayTimeout: 3000,
         navPosition: "bottom",
         speed: 400,
+        nav: false,
+        controlsText: ['<span class="uil uil-angle-left"></span>', '<span class="uil uil-angle-right"></span>'],
         gutter: 12,
         responsive: {
             992: {
