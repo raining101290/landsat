@@ -207,7 +207,7 @@ p {
           transform: rotate(-45deg);
 }
 #topnav .navbar-toggle.open span:hover {
-  background-color: #00A8E1;
+  background-color: #FFFFFF;
 }
 #topnav .navbar-toggle:hover, #topnav .navbar-toggle:focus,
 #topnav .navbar-toggle .navigation-menu > li > a:hover, #topnav .navbar-toggle:focus {
@@ -548,9 +548,6 @@ p {
   #topnav .container {
     width: auto;
   }
-  #topnav #navigation {
-    max-height: 400px;
-  }
   #topnav .navigation-menu {
     float: none;
   }
@@ -646,7 +643,7 @@ p {
     display: none;
     height: auto;
     padding-bottom: 0;
-    overflow: auto;
+    overflow: visible;
     border-top: 1px solid #f2f4f6;
     border-bottom: 1px solid #f2f4f6;
     background-color: #fff;
@@ -7060,7 +7057,66 @@ p.line::before{
     display: none;
   }
 }
+.mobile-contact{
+  display: none;
+  padding: 20px;
+  margin: 15px 15px 120px 15px;
+  background: #677679;
+  border-radius: 8px;
+  color: #FFFFFF;
+  text-align: center;
+}
+/* #topnav #mobile-menu{
+  margin-bottom: 50px;
+}
+#mobileham{
+  position:absolute;
+  left: -85px;
+  top: -1px;
+} */
+/* #mobile-menu, .mobile-contact{
+  display: none !important;
+} */
 @media (max-width: 991px){
+  .mobile-contact {
+      display: block !important;
+  }
+  #webmenu{
+    display: none;
+  }
+  #navigation .navigation-menu{
+    overflow-y: auto;
+  }
+  #topnav.nav-sticky{
+    background: #FFFFFF;
+  }
+  #topnav .container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #topnav .menu-extras{
+    background: #81CDD4;
+    padding: 0 30px 0 20px;
+  }
+  #topnav .navbar-toggle span{
+    background: #FFFFFF;
+  }
+  #topnav #navigation{
+    position: fixed;
+    z-index: 99;
+    right:0px;
+    left: auto;
+    height: 100% !important;
+    max-width: 480px;
+  }
+  #topnav #navigation li{
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+  }
+  #topnav .navigation-menu > li > a {
+      color: #212529;
+      padding: 15px 20px;
+  }
   .hidden-sm{
     display: none;
   }
@@ -7122,7 +7178,15 @@ p.line::before{
     height: 115px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
+  #topnav #navigation{
+    position: fixed;
+    z-index: 99;
+    right:0px;
+    left: auto;
+    height: 100% !important;
+    max-width: 80%;
+  }
   .banner{
     height: 300px;
   }
@@ -7178,6 +7242,9 @@ p.line::before{
     display: flex; 
     align-items: flex-start;
     justify-content: flex-start;
+  }
+  .hidden-xs{
+    display: none;
   }
 }
 

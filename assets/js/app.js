@@ -40,6 +40,15 @@ function toggleMenu() {
     }
 };
 
+function toggleMobileMenu() {
+    var webmenu = document.getElementById('web-menu')
+    var mobilemenu = document.getElementById('mobile-menu')
+    var hamburger = document.getElementById('mobileham')
+    mobilemenu.style.display = "none"
+    webmenu.style.display = "block"
+    hamburger.style.display = "none";
+};
+
 //Menu Active
 function getClosest(elem, selector) {
 
