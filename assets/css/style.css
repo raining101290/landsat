@@ -206,9 +206,6 @@ p {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-#topnav .navbar-toggle.open span:hover {
-  background-color: #FFFFFF;
-}
 #topnav .navbar-toggle:hover, #topnav .navbar-toggle:focus,
 #topnav .navbar-toggle .navigation-menu > li > a:hover, #topnav .navbar-toggle:focus {
   background-color: transparent;
@@ -643,7 +640,7 @@ p {
     display: none;
     height: auto;
     padding-bottom: 0;
-    overflow: visible;
+    overflow: auto;
     border-top: 1px solid #f2f4f6;
     border-bottom: 1px solid #f2f4f6;
     background-color: #fff;
@@ -7054,7 +7051,7 @@ p.line::before{
 }
 @media (min-width: 991px){
   .hidden-md{
-    display: none;
+    display: none !important;
   }
 }
 .mobile-contact{
@@ -7154,6 +7151,9 @@ p.line::before{
   .projects-wrapper .work-image{
     height: 215px;
   }
+  .hidden-xs{
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .topbar-container .topbar-btn .btn{
@@ -7242,9 +7242,6 @@ p.line::before{
     display: flex; 
     align-items: flex-start;
     justify-content: flex-start;
-  }
-  .hidden-xs{
-    display: none;
   }
 }
 
